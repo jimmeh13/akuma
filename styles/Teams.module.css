@@ -1,0 +1,36 @@
+.header {
+    font-size: 7rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 75px;
+    text-shadow: 4px 4px #991313;
+}
+
+/* .background {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    z-index: -1;
+} */
+
+.background {
+    background-image: url("../public/league-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.backgroundWrapper {
+    display: inline-block;
+    overflow: hidden;
+    /* width: 100%; */
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    background-image: url("../public/league-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

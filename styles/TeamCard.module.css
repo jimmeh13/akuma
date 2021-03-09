@@ -1,0 +1,46 @@
+.teamCard {
+    /* background-color: darkred; */
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 0;
+    transition: 0.5s;
+}
+
+.teamCard:hover {
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+.teamCard:hover .teamName {
+    color: #991313;
+}
+
+.teamCard:hover .teamGame {
+    color: #991313;
+}
+
+.teamCard > img {
+    display: block;
+    width: 95%;
+    height: 95%;
+    margin: auto;
+}
+
+.teamName {
+    font-size: 25px;
+    color: white;
+    margin-top: -65px;
+    /* margin-left: 5px; */
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+
+.teamGame {
+    font-size: 25px;
+    color: white;
+    margin-top: -30px;
+    /* margin-left: 5px; */
+    text-align: center;
+    text-shadow: 2px 2px black;
+}

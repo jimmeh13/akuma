@@ -1,16 +1,84 @@
-html,
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #1e242a !important;
+    color: white !important;
+    font-family: "RocknRoll One", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+        Helvetica Neue, sans-serif;
+}
+
+nav {
+    display: block;
+    width: 100%;
+    padding-top: 10px;
+    height: 125px;
+    background-color: transparent;
+    text-align: center;
+}
+
+nav > ul > li {
+    display: inline-block;
+}
+
+nav > ul > li:not(:last-child) {
+    margin-right: 6%;
+}
+
+nav > ul > li > a {
+    font-size: 35px;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit !important;
+    text-decoration: none !important;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.home {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    z-index: -1;
+}
+
+.homeBackgroundWrapper {
+    display: inline-block;
+    overflow: hidden;
+    /* width: 100%; */
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    background-image: url("../public/league-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home2 {
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(35deg, #991313 29%, #d12c2c 60%);
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(13deg, #801111 14%, #b02323 64%);
+}
+::-webkit-scrollbar-track {
+    background: #333333;
+    border-radius: 8px;
 }
