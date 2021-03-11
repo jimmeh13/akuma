@@ -11,7 +11,7 @@ const NavBar = ({ active }: { active: string }) => {
             <nav>
                 <ul>
                     <li>
-                        <a className={styles.hoverable} href="/">
+                        <a className={styles.hoverable} href="https://shop.spreadshirt.com/akuma-merch-shop/" target="_blank">
                             MERCH
                         </a>
                     </li>

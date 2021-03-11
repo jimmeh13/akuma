@@ -1,7 +1,7 @@
 .homeMainText {
     position: absolute;
     display: block;
-    top: 43%;
+    top: 37%;
     width: 100%;
     margin: auto;
     font-size: 50px;
@@ -40,6 +40,168 @@
     animation-delay: 1.5s;
 }
 
+.button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid #991313;
+    background: linear-gradient(45deg, #991313 50%, white 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+
+    color: #991313; /*For IE*/
+    -webkit-animation: slide 2.5s forwards;
+    -webkit-animation-delay: 3s;
+    animation: slide 2.5s forwards;
+    animation-delay: 3s;
+    opacity: 0;
+    background-size: 300%;
+    background-position: 100%;
+    transition: 1s, font-size 0.2s;
+}
+
+.button:hover,
+.button:hover:after {
+    background-position: 0;
+    font-size: 1.1em;
+
+    color: #991313; /*For IE*/
+}
+
+.scrollDownWrapper {
+    -webkit-animation: slide 2.5s forwards;
+    -webkit-animation-delay: 3s;
+    animation: slide 2.5s forwards;
+    animation-delay: 3s;
+    opacity: 0;
+    margin-left: -70px;
+}
+
+.scrollDown {
+    position: absolute;
+    margin-top: 90vh;
+    filter: invert(100%);
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+}
+
+.upcomingMatches {
+    font-size: 50px;
+    text-shadow: 4px 4px #991313;
+}
+
+.matchCard1 {
+    width: 100%;
+    height: 100px;
+    border: 1px solid rgb(99, 99, 99);
+    text-align: left;
+    background-color: #371e1e;
+}
+
+.matchCard2 {
+    width: 100%;
+    height: 100px;
+    border: 1px solid rgb(99, 99, 99);
+    text-align: right;
+    background-color: #371e1e;
+}
+
+.teamOneLogo {
+    margin-left: 25px;
+    margin-top: -25px;
+}
+
+.teamTwoLogo {
+    margin-right: 25px;
+    margin-top: -25px;
+}
+
+.teamOneTextWrapper {
+    margin-top: -115px;
+    margin-right: 15px;
+    text-align: right;
+}
+
+.teamOneTwitterWrapper {
+    margin-top: -10px;
+    margin-right: 15px;
+    text-align: right;
+}
+
+.teamTwoTextWrapper {
+    margin-top: -115px;
+    margin-left: 15px;
+    text-align: left;
+}
+
+.teamTwoTwitterWrapper {
+    margin-top: -10px;
+    margin-left: 15px;
+    text-align: left;
+}
+
+.matchScore {
+    margin-top: 0px;
+}
+
+.iconHover:hover {
+    color: #991313;
+    cursor: pointer;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    position: relative;
+    /* border-radius: 10px; */
+    background-image: linear-gradient(135deg, transparent 3%, rgb(99, 99, 99) 3% 97%, transparent 97%);
+    padding: 20px;
+    padding-bottom: 50px;
+    z-index: 0;
+}
+
+.container::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+    /* border-radius: 7px; */
+    background-image: linear-gradient(135deg, transparent 3%, #1e242a 3% 97%, transparent 97%);
+}
+
+@-webkit-keyframes bounce {
+    0%,
+    100% {
+        -webkit-transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(-5px);
+    }
+}
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
 @-webkit-keyframes slide {
     100% {
         opacity: 100%;
@@ -50,36 +212,4 @@
     100% {
         opacity: 100%;
     }
-}
-
-/* FADING BG */
-@keyframes cf4FadeInOut {
-    0% {
-        opacity: 1;
-    }
-    17% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 0;
-    }
-    92% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-#cf4a img:nth-of-type(1) {
-    animation-delay: 6s;
-}
-#cf4a img:nth-of-type(2) {
-    animation-delay: 4s;
-}
-#cf4a img:nth-of-type(3) {
-    animation-delay: 2s;
-}
-#cf4a img:nth-of-type(4) {
-    animation-delay: 0;
 }
